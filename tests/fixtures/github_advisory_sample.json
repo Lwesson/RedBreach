@@ -1,0 +1,19 @@
+[
+  {
+    "ghsa_id": "GHSA-abcd-1234-efgh",
+    "cve_id": "CVE-2025-22222",
+    "summary": "XSS in popular npm package",
+    "description": "Cross-site scripting vulnerability.",
+    "severity": "high",
+    "vulnerabilities": [
+      {
+        "package": {"ecosystem": "npm", "name": "package-name"},
+        "vulnerable_version_range": "<= 3.2.0",
+        "first_patched_version": {"identifier": "3.2.1"}
+      }
+    ],
+    "html_url": "https://github.com/advisories/GHSA-abcd-1234-efgh",
+    "published_at": "2025-01-15T00:00:00Z",
+    "updated_at": "2025-01-20T00:00:00Z"
+  }
+]

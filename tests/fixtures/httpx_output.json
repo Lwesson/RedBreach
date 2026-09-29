@@ -1,0 +1,3 @@
+{"input":"www.example.com","url":"https://www.example.com","status_code":200,"title":"Example","tech":["nginx"],"content_length":1256}
+{"input":"api.example.com","url":"https://api.example.com","status_code":200,"title":"API","tech":["express"],"content_length":45}
+{"input":"dev.example.com","url":"https://dev.example.com","status_code":403,"title":"Forbidden","tech":["apache"],"content_length":199}

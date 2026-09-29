@@ -1,0 +1,42 @@
+[project]
+name = "redbreach"
+version = "0.1.0"
+description = "Full-spectrum security testing platform for bug bounty, pentest, and private assessments"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Security",
+]
+dependencies = [
+    "click>=8.0",
+    "rich>=13.0",
+    "aiosqlite>=0.20.0",
+    "httpx>=0.27.0",
+    "python-dotenv>=1.0.0",
+    "jinja2>=3.1.0",
+    "cryptography>=42.0.0",
+]
+
+[project.optional-dependencies]
+# The Anthropic SDK is only needed for the anthropic AI provider. OpenAI and
+# local models use httpx (a base dependency), so the base install stays
+# provider neutral: pip install redbreach[anthropic] to use Claude.
+anthropic = ["anthropic>=0.40.0"]
+dev = [
+    "redbreach[anthropic]",
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24.0",
+]
+
+[project.scripts]
+redbreach = "redbreach.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["redbreach*"]
+
+[tool.setuptools.package-data]
+redbreach = ["templates/*.md", "intel/*.json"]

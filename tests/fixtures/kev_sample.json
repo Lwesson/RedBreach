@@ -1,0 +1,10 @@
+{
+  "title": "CISA KEV Catalog",
+  "catalogVersion": "2026.03.29",
+  "count": 3,
+  "vulnerabilities": [
+    {"cveID": "CVE-2024-12345", "vendorProject": "F5", "product": "NGINX", "vulnerabilityName": "F5 NGINX Buffer Overflow", "dateAdded": "2024-11-01", "shortDescription": "NGINX buffer overflow allows remote code execution.", "requiredAction": "Apply updates.", "dueDate": "2024-12-01", "knownRansomwareCampaignUse": "Unknown"},
+    {"cveID": "CVE-2024-67890", "vendorProject": "Apache", "product": "HTTP Server", "vulnerabilityName": "Apache Path Traversal", "dateAdded": "2024-10-15", "shortDescription": "Path traversal in Apache HTTP Server.", "requiredAction": "Apply updates.", "dueDate": "2024-11-15", "knownRansomwareCampaignUse": "Known"},
+    {"cveID": "CVE-2025-11111", "vendorProject": "Adobe", "product": "Experience Manager", "vulnerabilityName": "Adobe AEM SSRF", "dateAdded": "2025-02-01", "shortDescription": "SSRF in Adobe Experience Manager.", "requiredAction": "Apply updates.", "dueDate": "2025-03-01", "knownRansomwareCampaignUse": "Unknown"}
+  ]
+}

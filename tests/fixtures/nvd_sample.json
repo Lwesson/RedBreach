@@ -1,0 +1,33 @@
+{
+  "resultsPerPage": 2,
+  "startIndex": 0,
+  "totalResults": 2,
+  "vulnerabilities": [
+    {
+      "cve": {
+        "id": "CVE-2024-54321",
+        "descriptions": [{"lang": "en", "value": "Buffer overflow in nginx 1.24"}],
+        "metrics": {
+          "cvssMetricV31": [{"cvssData": {"baseScore": 7.5, "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"}}]
+        },
+        "configurations": [{"nodes": [{"cpeMatch": [{"vulnerable": true, "criteria": "cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*", "versionEndExcluding": "1.25.3"}]}]}],
+        "references": [{"url": "https://example.com/advisory"}],
+        "published": "2024-10-15T00:00:00.000",
+        "lastModified": "2024-10-20T00:00:00.000"
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2025-99999",
+        "descriptions": [{"lang": "en", "value": "XSS in React"}],
+        "metrics": {
+          "cvssMetricV31": [{"cvssData": {"baseScore": 6.1, "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"}}]
+        },
+        "configurations": [{"nodes": [{"cpeMatch": [{"vulnerable": true, "criteria": "cpe:2.3:a:facebook:react:*:*:*:*:*:*:*:*", "versionEndExcluding": "18.3.0"}]}]}],
+        "references": [],
+        "published": "2025-01-10T00:00:00.000",
+        "lastModified": "2025-01-15T00:00:00.000"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+    "commandline": "ffuf -u https://www.example.com/FUZZ -w wordlist.txt -o output.json -of json",
+    "results": [
+        {"input": {"FUZZ": "admin"}, "position": 1, "status": 200, "length": 4523, "words": 312, "lines": 89, "content-type": "text/html", "url": "https://www.example.com/admin", "host": "www.example.com"},
+        {"input": {"FUZZ": ".env"}, "position": 2, "status": 200, "length": 234, "words": 12, "lines": 8, "content-type": "text/plain", "url": "https://www.example.com/.env", "host": "www.example.com"},
+        {"input": {"FUZZ": "backup"}, "position": 3, "status": 403, "length": 199, "words": 14, "lines": 7, "content-type": "text/html", "url": "https://www.example.com/backup", "host": "www.example.com"}
+    ]
+}

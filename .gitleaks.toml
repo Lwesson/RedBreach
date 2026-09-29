@@ -1,0 +1,18 @@
+title = "RedBreach gitleaks config"
+
+# Use all of gitleaks' default rules, then allowlist the synthetic secrets that
+# exist only as fixtures for RedBreach's own secret-scanner tests. They are not
+# real credentials. Allowlisting by exact value (not line number) keeps this
+# correct even as the test files change.
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Synthetic secret-scanner test fixtures (not real credentials)"
+regexTarget = "line"
+regexes = [
+    '''roundtrip-key-12345678''',
+    '''xoxb-1234567890-1234567890-abcdefghijklmnopqrstuvwx''',
+    '''eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\.eyJzdWIiOiIxMjM0NSJ9\.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c''',
+    '''ghp_abcdefghijklmnopqrstuvwxyzABCDEF1234''',
+]

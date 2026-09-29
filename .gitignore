@@ -1,0 +1,29 @@
+# Python build / cache artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and local config
+.env
+.env.*
+*.pem
+*.key
+
+# Runtime data, created under --data-dir (default ~/.redbreach), never in the repo.
+# These patterns only matter if someone points --data-dir at the repo itself.
+/engagements/
+/evidence/
+/reports/
+/sessions/
+/config.json
+/redbreach.db
+*.db
+*.sqlite
+*.sqlite3
+*.log

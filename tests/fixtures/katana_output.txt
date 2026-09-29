@@ -1,0 +1,8 @@
+https://www.example.com/
+https://www.example.com/login
+https://www.example.com/api/v1/users
+https://www.example.com/search?q=test
+https://www.example.com/admin/dashboard
+https://www.example.com/assets/main.js
+https://www.example.com/api/v1/products?page=1&limit=10
+https://www.example.com/reset-password?token=abc123

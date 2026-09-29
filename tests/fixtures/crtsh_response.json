@@ -1,0 +1,6 @@
+[
+    {"name_value": "www.example.com"},
+    {"name_value": "mail.example.com"},
+    {"name_value": "cdn.example.com"},
+    {"name_value": "*.example.com"}
+]

@@ -1,0 +1,5 @@
+https://www.example.com/login
+https://www.example.com/api/v1/users
+https://www.example.com/admin
+https://api.example.com/health
+https://www.example.com/search?q=test
